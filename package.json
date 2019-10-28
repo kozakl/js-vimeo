@@ -28,6 +28,9 @@
       "tsx"
     ]
   },
+  "dependencies": {
+    "@kozakl/utils": "^6.0.1"
+  },
   "devDependencies": {
     "@types/jest": "^22.2.2",
     "@types/node": "^10.12.0",

@@ -6,5 +6,4 @@ export default async function vimeoPosterURL(videoId:string)
         .then((response)=> response.json())
         .then((result)=>
             removeLastFrom(result[0].thumbnail_large, '_'));
-    
 }

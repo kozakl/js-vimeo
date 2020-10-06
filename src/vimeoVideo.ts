@@ -4,7 +4,7 @@ import {vimeoVideoId} from './index';
 export default async function vimeoVideo(url:string)
 {
     const id = vimeoVideoId(url);
-    return await fetch(`http://vimeo.com/api/v2/video/${id}.json`)
+    return await fetch(`https://vimeo.com/api/v2/video/${id}.json`)
         .then((response)=> response.json())
         .then((result:Result[])=> ({
             title: result[0].title,
